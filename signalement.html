@@ -144,21 +144,19 @@
     const harassmentSelect = document.getElementById('harassment_type');
     let selectedHarassment = [];
 
-    // Simuler multi-sélection sur une liste déroulante classique
     harassmentSelect.addEventListener('change', function() {
       const value = harassmentSelect.value;
       const index = selectedHarassment.indexOf(value);
       if(index === -1) {
         if(selectedHarassment.length >= 4){
           alert("Vous pouvez sélectionner au maximum 4 types de harcèlement !");
-          harassmentSelect.value = ""; // reset dropdown
+          harassmentSelect.value = "";
           return;
         }
         selectedHarassment.push(value);
       } else {
-        selectedHarassment.splice(index, 1); // désélection
+        selectedHarassment.splice(index, 1);
       }
-      // Réafficher les choix sélectionnés comme texte dans le dropdown
       harassmentSelect.innerHTML = `
         <option disabled selected>Choisir (sélection actuelle : ${selectedHarassment.join(', ')})</option>
         <option value="verbal">Verbal</option>
@@ -196,6 +194,15 @@
     subText.textContent = "Si cela n'est pas respecté, les signalements pourraient ne pas être pris en compte et votre confidentialité pourrait être compromise.";
     subText.style.marginTop = "10px";
     mainFooter.insertAdjacentElement('afterend', subText);
+
+    // ===== SCRIPT pour ajouter le lien "Mobile" dans la bannière =====
+    const banner = document.querySelector('.banner');
+    const mobileLink = document.createElement('a');
+    mobileLink.href = "Mobile.html";
+    mobileLink.textContent = "Mobile";
+    banner.appendChild(mobileLink);
   </script>
 </body>
 </html>
+
+
