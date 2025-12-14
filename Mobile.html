@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anti-harcèlement</title>
+  <link rel="icon" href="Anti-harcèlement.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0;
+      font-family:'Roboto', sans-serif;
+      background-color:#1a1a1a;
+      color:white;
+      text-align:center;
+    }
+    .banner{
+      width:100%;
+      height:144px;
+      background-color:#b30000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+    }
+    .banner img{
+      height:120px;
+      position:absolute;
+      left:20px;
+      cursor:pointer;
+    }
+    .banner a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:18px;
+      margin:0 20px;
+    }
+    .banner a:hover{
+      text-decoration:underline;
+    }
+    .content{
+      margin-top:60px;
+    }
+    .content img{
+      width:250px;
+      max-width:80%;
+    }
+    .content h1{
+      margin-top:30px;
+      font-size:40px;
+      color:#ffcccc;
+    }
+    .install-btn{
+      display:inline-block;
+      margin-top:40px;
+      padding:15px 30px;
+      background-color:#b30000;
+      color:white;
+      font-size:20px;
+      font-weight:bold;
+      text-decoration:none;
+      border-radius:8px;
+      transition:background-color 0.2s, transform 0.2s;
+    }
+    .install-btn:hover{
+      background-color:#ff3333;
+      transform:scale(1.05);
+    }
+    .android-note{
+      margin-top:40px;
+      padding:20px;
+      max-width:700px;
+      margin-left:auto;
+      margin-right:auto;
+      font-size:15px;
+      line-height:1.6;
+    }
+    .warning-red{
+      color:#ff3333;
+      font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="Anti-harcèlement.png" alt="Logo Anti-harcèlement" onclick="window.location.reload()">
+    <a href="index.html">Home</a>
+    <a href="signalement.html">Signalement</a>
+    <a href="Mobile.html">Mobile</a>
+  </div>
+
+  <div class="content">
+    <img src="Anti-harcèlement.png" alt="Anti-harcèlement">
+    <h1>On a maintenant une app mobile !</h1>
+
+    <a class="install-btn" href="_Anti_Harcèlement_19342642.apk" download>
+      Installer l’app
+    </a>
+
+    <div class="android-note">
+      📱 <strong>Android uniquement</strong><br><br>
+
+      <div class="warning-red">
+        Lors de l’installation, Android ou votre antivirus peut afficher un message indiquant que l’application est potentiellement dangereuse.<br><br>
+        👉 C’est normal : l’application n’est pas encore vérifiée ni publiée sur le Google Play Store.<br>
+        Elle provient directement de notre site officiel Anti-harcèlement.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
