@@ -181,13 +181,12 @@
         body: JSON.stringify({content})
       });
 
-      alert('Le signalement a bien été envoyée, vous receverez un mail pour parler de vôtre signalement !');
+      alert("Le signalement a bien été envoyée, vous receverez un mail pour parler de vôtre signalement !");
       document.getElementById('reportForm').reset();
       selectedHarassment = [];
       harassmentSelect.value = "";
     });
 
-    // Texte secondaire
     const mainFooter = document.getElementById('mainFooterText');
     const subText = document.createElement('p');
     subText.className = 'footer-subtext';
@@ -195,7 +194,6 @@
     subText.style.marginTop = "10px";
     mainFooter.insertAdjacentElement('afterend', subText);
 
-    // ===== SCRIPT pour ajouter le lien "Mobile" dans la bannière =====
     const banner = document.querySelector('.banner');
     const mobileLink = document.createElement('a');
     mobileLink.href = "Mobile.html";
@@ -204,5 +202,4 @@
   </script>
 </body>
 </html>
-
 
